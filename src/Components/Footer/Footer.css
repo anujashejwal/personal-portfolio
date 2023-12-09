@@ -1,0 +1,32 @@
+.footer-box{
+    padding: 60px;
+    background-color:rgba(30, 30, 30, 0.6) !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    color: white;
+}
+.follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    /* background-color: teal; */
+ }
+ 
+.follow a{
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    margin:10px 10px;
+    cursor: grab;
+    transition: .6s linear !important;
+    color: cyan;
+    
+}
+ 
+.follow a:hover{
+    transform: rotate(360deg);
+    color:white;
+    
+ }
