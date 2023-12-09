@@ -36,18 +36,6 @@ const Contact: React.FC = () => {
         </Typography>
 
         <form onSubmit={handleSubmit}>
-          {/* <TextField
-            fullWidth
-            variant="standard"
-            className="textfield"
-            label="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            margin="normal"
-            InputLabelProps={{className: 'textfield__label'}}
-            style={{width:'70%'}}
-          /> */}
           <div className='names-input'>
           <input
             type="text"

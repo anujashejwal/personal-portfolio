@@ -1,6 +1,6 @@
 .contactpage{
-  margin: 80px auto;
-  margin-bottom: 100px;
+  margin: 50px auto;
+
 }
 .contact-container {
   margin: auto;
@@ -18,28 +18,49 @@
 .contact-head{
   color: white;
 }
-.textfield__label{
-  color: white !important;
+.names-input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
 }
-.form-input{
+.form-input,
+.textarea {
+  width: 100%;
+  color: #898787;
+  border: 1px solid #282828;
+  background-color: #282828;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
-
 }
-.form-input:hover{
+
+.form-input:hover,
+.textarea:hover {
   transform: scale(1.1);
 }
-.textarea{
-  transition: transform 0.3s ease-in-out;
 
+.button {
+  width: 50%;
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-.textarea:hover{
-  transform: scale(1.1);
-}
-.button{
-  position: sticky;
-}
-.button:hover{
-  background-color:white !important;
+
+.button:hover {
+  background-color: white !important;
   color: black !important;
 }
 
+@media (min-width: 768px) {
+  .contact-container {
+    width: 60%;
+  }
+}

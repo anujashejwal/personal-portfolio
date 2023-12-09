@@ -39,9 +39,6 @@ export default function Home() {
 
         </section>
         <section className='home-right'>
-        {/* <Typography variant='h2' className='hello-text'>
-              Hello!
-          </Typography> */}
           <Typography className='home-para'>
           I am a Software Engineer graduated in year 2023. I’m here to help you with your Web development projects , UI/UX designs and to talk about  travel, lifestyle, technology and many more things...
           </Typography>

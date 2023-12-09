@@ -16,43 +16,34 @@ body{
   border-radius: 15px;
   color: white;
   text-align: center;
-  /* background-size: 400% 400%; */
-  /* box-shadow: 0 0 10px rgba(255, 255, 255, 1); */
-  /* background-image: url('../../../public/images/background.png'); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-attachment: fixed;  */
+  
 }
 
 .home-sections{
   display: flex;
   height: 80%;
+  flex-wrap: wrap;
   /* border: 2px solid yellow; */
 
 }
-.home-left{
-  width: 40%;
-  margin-left: 100px;
-  /* height: 75%; */
-  text-align: center;
-  /* border: 2px solid white; */
 
+.home-left,.home-right {
+  /* display: flex; */
+  width: 50%; /* Make both sections take full width on smaller screens */
+  text-align: center;
+  margin-bottom: 20px; /* Add some spacing between the sections */
 }
 .my-name{
   height: max-content;
   padding: 10px;
-  /* border: 1px solid red; */
- margin-top: 80px;
+  margin-top: 30%;
  
 }
 .name-head{
-  /* font-family: 'Inter', sans-serif; */
+ 
   font-family: 'Philosopher', sans-serif !important;
-  margin: 0;
-  text-align: center;
-  font-size: 70px !important;
-  position: relative;
-  display: inline-block;
+  font-size: 50px !important;
+
 }
 .animated-text {
   background: linear-gradient(45deg, #f5613c, #f8a769, #fcf649, #6df393, #35f3d9);
@@ -60,6 +51,7 @@ body{
   color: transparent;
   background-clip: text;
   animation: textAnimation 5s infinite;
+  font-size: inherit;
 }
 
 @keyframes textAnimation {
@@ -78,53 +70,34 @@ body{
   font-family: 'Julius Sans One', sans-serif; 
   letter-spacing: 8px !important; 
   color:white; 
-  padding: 10px;
-
-  /* font-weight: lighter; */
+  padding: 8px;
 }
 
 .home-right{
-  width: 40%;
+  width: 50%;
   text-align: center;
-  /* border: 2px solid green; */
+ 
 }
 
-.hello-text{
-  font-family: 'Maven Pro',sans-serif;
-  margin-top: 150px;
-  text-align: left;
-  background: -webkit-linear-gradient( rgba(251,181,181,1) 41%, rgba(245,202,93,1) 71%);
-  background-clip: text; 
-  -webkit-text-fill-color: transparent;
-}
-.css-1sra7t5-MuiTypography-root{
-  /* margin-top: 100px !important; */
-  font-weight: 800 !important;
-}
-.css-ahj2mt-MuiTypography-root{
-  margin-top: 40% !important;
-
-}
 .home-para{
   text-align: center;
-  /* padding-top: 30px; */
-  /* font-weight: bold !important; */
   font-family: 'Montserrat Alternates', sans-serif !important;
-  /* font-family: 'Arsenal', sans-serif !important; */
   font-size: 18px !important;
+  margin-top: 40% !important;
 }
-.form-input{
-  width:'70%';
-  color:'#898787';
-  border:'1px solid #282828';
-  background-color:'#282828';
-  border-radius:'5px';
-  padding:'20px';
-  font-size:'20px'
-}
-.names-input{
-  display: flex;  
-  margin:30px;
-  justify-content: center;
-  align-items: center;
+
+@media (min-width: 768px) {
+  /* Apply styles for screens larger than 768px width */
+  .home-container {
+    width: 70%;
+  }
+
+  .home-sections {
+    justify-content: space-between; /* Align sections side by side */
+  }
+
+  .home-left,
+  .home-right {
+    width: 48%; /* Adjust width for larger screens */
+  }
 }
