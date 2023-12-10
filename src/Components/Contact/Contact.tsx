@@ -22,9 +22,18 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData); // You can submit this data to a server or perform other actions here
+    console.log(formData); 
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      message: '',
+    });
+    console.log('Form submitted!');
+    window.location.reload();
   };
-
+  
+  
 
   return (
     <div className="contactpage">
@@ -35,7 +44,13 @@ const Contact: React.FC = () => {
           Get in Touch
         </Typography>
 
-        <form onSubmit={handleSubmit}>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+          onSubmit={handleSubmit}>
+
           <div className='names-input'>
           <input
             type="text"
@@ -78,6 +93,7 @@ const Contact: React.FC = () => {
             />
   
         </form>
+        <div data-netlify-recaptcha="true"></div>
         <Button
             className="button"
             type="submit"
