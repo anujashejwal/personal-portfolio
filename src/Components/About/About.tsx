@@ -22,8 +22,14 @@ export default function About() {
           </div>
 
           <div className="left-2">
+            <a
+              href="https://www.instagram.com/framesnpixel/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <img src="../images/insta-logo-3.png" className="logo-img" />
             <h3>Instagram</h3>
+            </a>
           </div>
           <div className="left-3">
             <a
