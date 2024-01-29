@@ -89,14 +89,14 @@ export default function About() {
             </p>
           </div>
           <div className="resume-dload">
-            <img src="../images/download-logo-2.png" className="dload-logo" />
-
-            <a
+          <a
               href="../Anuja_Shejwal Resume.pdf"
               download="Anuja_Shejwal Resume.pdf"
             >
+            <img src="../images/download-logo-2.png" className="dload-logo" />
+            
               <p>Download my resume here</p>
-            </a>
+              </a>
           </div>
         </section>
       </div>
