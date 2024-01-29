@@ -92,8 +92,8 @@ export default function About() {
             <img src="../images/download-logo-2.png" className="dload-logo" />
 
             <a
-              href="../Anuja Shejwal Resume.pdf"
-              download="Anuja Shejwal Resume.pdf"
+              href="../Anuja_Shejwal Resume.pdf"
+              download="Anuja_Shejwal Resume.pdf"
             >
               <p>Download my resume here</p>
             </a>
