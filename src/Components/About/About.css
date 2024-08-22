@@ -1,43 +1,44 @@
 .about-page{
-  
-    display: flex;
-    justify-content: center !important;
-    align-items: center;
-    /* width:80%; */
-    /* margin: 80px 80px; */
-    margin: 20px;
-    background-color: transparent;
-    gap: 20px;
+
+  justify-content: center !important;
+  align-items: center;
+  background-color: transparent;
+  margin-top: 100px;
 
 }
 
 .section-left {
-    margin-top: 20px; /* Adjust margin for smaller screens */
-    /* border: 1px solid red; */
+  width: 80%;
+  /* border: 2px solid yellow; */
+margin:80px auto;
+   /* Adjust margin for smaller screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   }
-  
+
 
 .left-1,.left-2,.left-3{
   
-    margin-bottom: 20px;
-    text-align: center;
-    /* height: max-content; */
-    padding: 10px;
-    background-color: rgba(30, 30, 30, 0.6);
-    /* border-radius: 15px; */
-    color: white;
-    transition: transform 0.3s ease-in-out;
+  text-align: center;
+  height: max-content;
+  padding: 50px;
+  background-color: rgba(30, 30, 30, 0.6);
+  color: white;
+  transition: transform 0.3s ease-in-out;
 }
 .left-1{
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px ;
     background: linear-gradient(164deg, rgba(0,117,181,1) 26%, rgba(12,180,243,1) 62%);
 
 }
 .left-2{
+  border-radius: 20px ;
     background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
 }
 .left-3{
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
     background: linear-gradient(162deg, rgba(214,218,215,1) 0%, rgba(69,70,69,1) 24%, rgba(0,0,0,1) 52%, rgba(69,70,69,1) 78%, rgba(214,218,215,1) 100%);
 }
 
@@ -54,10 +55,20 @@
   cursor: pointer;
 }
 .section-middle{
-    width:100%;
-    margin-left: 0px;
-    text-align: center;
+  display:flex;
+  gap:50px;
+  justify-content: space-between;
+  width:100%;
+  margin-top: 50px;
+  margin-left: 0px;
+  text-align: center;
     /* border: 1px solid yellow; */
+}
+.section-middle-left{
+  width:50%;
+}
+.section-middle-right{
+  width:50%
 }
 @media (min-width: 768px) {
     /* Apply styles for screens larger than 768px width */
@@ -65,11 +76,11 @@
       margin: 80px 60px;
     }
   
-    .section-left,
+    /* /* .section-left,
     .section-right {
-      width: 20%; /* Reset width for larger screens */
-    }
-  
+      width: 20%; 
+    } */
+   */
     .section-middle {
       width: 50%;
     }
@@ -78,7 +89,7 @@
     .left-2,
     .left-3 {
       width: 85%; /* Reset width for larger screens */
-      margin-bottom: 30px; /* Reset margin for larger screens */
+      
     }
   }
 .logo-img{
@@ -88,28 +99,32 @@
     margin-top: 10px;
     /* background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7); */
 }
-
-.ps-section{
-  width: 100%;
-    height: max-content;
-    justify-content: center;
-    padding: 20px;
-    color: black;
-    text-align: center;
-    background-color: rgba(30, 30, 30, 0.6);
-    border-radius: 15px;
-    background: linear-gradient(164deg, rgba(248,185,154,1) 20%, rgba(246,200,141,1) 45%, rgba(225,196,183,1) 63%, rgba(190,241,201,1) 89%);
-    /* font-family: 'Montserrat Alternates', sans-serif !important; */
+.section-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+}
+.ps-section{  
+  width: 20%;
+  height: max-content;
+  justify-content: center;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  background-color: rgba(30, 30, 30, 0.6);
+  border-radius: 20px;
+  background: linear-gradient(164deg, rgba(248,185,154,1) 20%, rgba(246,200,141,1) 45%, rgba(225,196,183,1) 63%, rgba(190,241,201,1) 89%);
+  /* font-family: 'Montserrat Alternates', sans-serif !important; */
 
 }
 .resume-dload{
-    width: 100%;
-    margin-top:15px ;
+    width: 20%;
     height: max-content;
     justify-content: center;
-    padding: 20px;
+    padding: 50px 30px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
     background: linear-gradient(137deg, rgba(73,242,180,1) 32%, rgba(26,175,211,1) 66%);
 
@@ -142,16 +157,18 @@
     height: 15vh;
     width: 10vw;
 }
+.behance-logo-img{
+  height:18vh;
+  width:8vw;
+}
 .certificates{
-    height: max-content;
+    height: 74%;
     padding: 40px;
     background-color: rgba(30, 30, 30, 0.6);
-    /* background-color: transparent;
-    border: 2px solid darkgrey; */
     border-radius: 15px;
     color: darkgrey;
     background-color: transparent;
-    border: 2px solid darkgrey;
+    /* border: 2px solid darkgrey; */
     border: 5px solid rgba(30, 30, 30, 0.8);
 
 }
@@ -174,16 +191,12 @@
   }
   
 .certificates a{
-    
-    color:darkgrey;
-    font-size: 18px;
-   text-decoration:underline;
+  color:darkgrey;
+  font-size: 18px;
+  text-decoration:underline;
+  
 }
-.certificate-links {
-    display: flex;
-    /* gap: 20px;  */
-    justify-content: space-evenly;
-  }
+
 .dribbble-link h2{
     /* font-family: 'Stylish', serif; */
     position: relative;

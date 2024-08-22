@@ -33,14 +33,20 @@ export default function Home() {
               width:'30%' 
             }} 
           />
+          <div className="location">
+          <Typography variant='h6' className='india-text'>
+              MUMBAI,
+          </Typography>
           <Typography variant='h6' className='india-text'>
               INDIA
           </Typography>
+          </div>
+          
 
         </section>
         <section className='home-right'>
           <Typography className='home-para'>
-          I am a Software Engineer graduated in year 2023. I’m here to help you with your Web development projects , UI/UX designs and to talk about  travel, lifestyle, technology and many more things...
+          As a Software Engineer, freshly graduated in 2023, I’m here to elevate your web development projects and craft intuitive UI/UX designs. Beyond the code, I’m all about exploring the world, diving into tech trends, and chatting about lifestyle and more. Let’s create something awesome together!
           </Typography>
         </section>
         </div>

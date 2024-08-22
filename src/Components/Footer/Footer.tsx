@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer-box">
       <h3 className="footer-1">Location</h3>
-      <p>Aurangabad</p>
+      <p>Mumbai</p>
       <p>Maharashtra, India</p>
       <p>&copy; {currentYear} Anuja Shejwal. All rights reserved.</p>
       <div className="follow">

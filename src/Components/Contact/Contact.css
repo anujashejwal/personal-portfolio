@@ -27,7 +27,8 @@
 }
 .form-input,
 .textarea {
-  width: 100%;
+  resize: none;
+  width:80%;
   color: #898787;
   border: 1px solid #282828;
   background-color: #282828;

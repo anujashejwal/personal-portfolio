@@ -1,10 +1,13 @@
 .navbar{
   position: sticky;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    /* box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.8);  */
-  }
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  top: 0; /* Ensures the sticky position sticks at the top */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important; /* White shadow */
+  z-index: 1000; /* Keeps the navbar above other elements when scrolling */
+}
  
 .nav-link {
     font-family: 'Inter', sans-serif;

@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
-            style={{width:'34%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px',marginRight:'30px'}}
+            style={{width:'31%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px',marginRight:'30px'}}
             />
             <input
             type="text"
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
-            style={{width:'34%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px'}}
+            style={{width:'31%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px'}}
             />
         </div>
           <input

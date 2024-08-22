@@ -65,12 +65,17 @@ body{
     background-position: 0% 0%;
   }
 }
+.location{
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+}
 /* Home.css */
 .india-text {
   font-family: 'Julius Sans One', sans-serif; 
   letter-spacing: 8px !important; 
   color:white; 
-  padding: 8px;
+  padding: 5px;
 }
 
 .home-right{
