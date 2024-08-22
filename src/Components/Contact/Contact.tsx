@@ -1,36 +1,33 @@
+'use client'
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import Navbar from '../Navbar/Navbar';
 import { Typography, Button, TextField, InputProps } from '@mui/material';
 import './Contact.css';
 import { makeStyles } from '@mui/styles';
+import axios from 'axios';
+import { log } from 'console';
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName:'',
-    email: '',
-    message: '',
-  });
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const [firstname, setfirstname] = useState()
+  const [lastname, setlastname] = useState()
+  const [email, setemail] = useState()
+  const [message, setmessage] = useState()
+  const backendURL = process.env.REACT_APP_API;
+  const formdata={
+    firstname :firstname,
+    lastname:lastname,
+    email:email,
+    message : message
+  }
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData); 
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      message: '',
-    });
-    console.log('Form submitted!');
-    window.location.reload();
+    try {
+      const response = await axios.post(`${backendURL}/api/messages/create`, formdata);
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error occurred during the API call:', error);
+      alert('Failed to submit the form. Please try again later.');
+    }
   };
   
   
@@ -45,10 +42,6 @@ const Contact: React.FC = () => {
         </Typography>
 
         <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-recaptcha="true"
           onSubmit={handleSubmit}>
 
           <div className='names-input'>
@@ -57,8 +50,8 @@ const Contact: React.FC = () => {
             className="form-input"
             placeholder="First Name"
             name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
+            value={firstname}
+            onChange={(e:any) => setfirstname(e.target.value)}
             style={{width:'31%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px',marginRight:'30px'}}
             />
             <input
@@ -66,8 +59,8 @@ const Contact: React.FC = () => {
             className="form-input"
             placeholder="Last Name"
             name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
+            value={lastname}
+            onChange={(e:any) => setlastname(e.target.value)}
             style={{width:'31%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px'}}
             />
         </div>
@@ -76,23 +69,23 @@ const Contact: React.FC = () => {
             className="form-input"
             placeholder='Email'
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            value={email}
+            onChange={(e:any) => setemail(e.target.value)}
             style={{width:'70%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px',marginBottom:'30px'}}
 
           />
           <textarea 
             rows={4} 
             cols={50} 
-            value={formData.message}
+            value={message}
+            onChange={(e:any) => setmessage(e.target.value)}
             placeholder="Message"
-            onChange={handleChange}
+          
             name="message"
             className='textarea'
             style={{width:'70%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px',marginBottom:'30px'}}
             />
   
-        </form>
         <div data-netlify-recaptcha="true"></div>
         <Button
             className="button"
@@ -106,9 +99,10 @@ const Contact: React.FC = () => {
               borderRadius: '15px',
               backgroundColor: 'transparent',
             }}
-          >
+            >
             Submit
           </Button>
+            </form>
       </div>
     </div>
   );
