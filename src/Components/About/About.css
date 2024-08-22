@@ -9,9 +9,7 @@
 
 .section-left {
   width: 80%;
-  /* border: 2px solid yellow; */
 margin:80px auto;
-   /* Adjust margin for smaller screens */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,8 +60,7 @@ margin:80px auto;
   margin-top: 50px;
   margin-left: 0px;
   text-align: center;
-    /* border: 1px solid yellow; */
-}
+  
 .section-middle-left{
   width:50%;
 }
@@ -71,16 +68,11 @@ margin:80px auto;
   width:50%
 }
 @media (min-width: 768px) {
-    /* Apply styles for screens larger than 768px width */
+   
     .about-page {
       margin: 80px 60px;
     }
   
-    /* /* .section-left,
-    .section-right {
-      width: 20%; 
-    } */
-   */
     .section-middle {
       width: 50%;
     }
