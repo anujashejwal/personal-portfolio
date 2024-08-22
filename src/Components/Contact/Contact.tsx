@@ -6,12 +6,14 @@ import './Contact.css';
 import { makeStyles } from '@mui/styles';
 import axios from 'axios';
 import { log } from 'console';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact: React.FC = () => {
-  const [firstname, setfirstname] = useState()
-  const [lastname, setlastname] = useState()
-  const [email, setemail] = useState()
-  const [message, setmessage] = useState()
+  const [firstname, setfirstname] = useState<string | undefined>('');
+  const [lastname, setlastname] = useState<string | undefined>('');
+  const [email, setemail] = useState<string | undefined>('');
+  const [message, setmessage] = useState<string | undefined>('');
+  const [isloading, setisloading] = useState<boolean>(false);
   const backendURL = process.env.REACT_APP_API;
   const formdata={
     firstname :firstname,
@@ -19,11 +21,24 @@ const Contact: React.FC = () => {
     email:email,
     message : message
   }
+  
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    setisloading(true)
     e.preventDefault();
     try {
       const response = await axios.post(`${backendURL}/api/messages/create`, formdata);
-      console.log(response.data);
+      // console.log(response.data);
+      console.log("toast bheja");
+      if(response.data.success){
+        setisloading(false)
+        
+        toast.success('Connection response send succesfully');
+        setfirstname('');
+        setlastname('');
+        setemail('');
+        setmessage('');
+      }
+      
     } catch (error) {
       console.error('Error occurred during the API call:', error);
       alert('Failed to submit the form. Please try again later.');
@@ -99,12 +114,19 @@ const Contact: React.FC = () => {
               borderRadius: '15px',
               backgroundColor: 'transparent',
             }}
+            disabled={isloading}
+            
             >
-            Submit
+            {isloading ? "Loading..":"Submit"}
           </Button>
             </form>
       </div>
+      <Toaster
+  position="bottom-center"
+  reverseOrder={false}
+/>
     </div>
+
   );
 };
 
