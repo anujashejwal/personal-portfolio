@@ -1,6 +1,6 @@
 .footer-box{
     padding: 30px;
-    background-color:rgba(30, 30, 30, 0.6) !important;
+    background-color:#282828;
     justify-content: center !important;
     align-items: center !important;
     text-align: center !important;
@@ -21,7 +21,7 @@
     margin:10px 10px;
     cursor: grab;
     transition: .6s linear !important;
-    color: cyan;
+    color: black;
     
 }
  

@@ -1,15 +1,109 @@
-.about-page{
 
+.about-page{
   justify-content: center !important;
   align-items: center;
-  background-color: transparent;
-  margin-top: 100px;
+  font-family: "Poppins", sans-serif !important;
+}
+.profiles{
+  background-color: #FFDBB5;
+  background-color: #C4DFAD;
+  height:100vh;
+}
+.profiles-sections{
+  display: flex;
+  width: 100%;
+}
+.about-page h1{
+  text-align: left;
+  margin: 0;
+  padding: 30px;
+  padding-top: 50px;
+  padding:50px 30px;
+  padding-bottom: 0;
+  margin-left: 70px;
+  font-size: 4rem;
+  font-family: 'Merienda', sans-serif;
+  font-family: 'Philosopher', sans-serif !important;
+  color: #047a5c9f;
+  background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.8, #fff)) no-repeat;
+  background-size: 110px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flick 1.5s infinite;
 
 }
 
-.section-left {
+@keyframes flick {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+.profile-txt{
+  width: 50%;
+  height: max-content;
+  text-align: left;
+  margin-bottom: 30px;
+  margin: 0 50px;
+  border-radius: 15px;
+  color: black;
+  padding: 50px !important;
+  background-color: transparent;
+ 
+}
+.profile-txt p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+.profile-txt ul{
+  list-style-type: disc;
+  text-align: left;
+  margin: 40px auto;
+  display: inline-block;
+  font-size: 15px;
+  
+}
+.profile-txt li{
+  margin-bottom: 10px;
+  
+}
+.profile-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+ 
+}
+.profile-buttons button{
+  padding: 20px 50px;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  color:white;
+  border-radius: 20px 0 20px 0;
+  border: 1px solid transparent;
+  background-color: #1b6d62;
+  cursor: pointer;
+}
+.frames-img{
+  width: 470px;
+  height: 450px;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+.accounts h1{
+  text-align: center;
+}
+
+.accounts-boxes{
   width: 80%;
-margin:80px auto;
+  margin:80px auto;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +114,7 @@ margin:80px auto;
 .left-1,.left-2,.left-3{
   text-align: center;
   height: max-content;
-  padding: 50px;
+  padding: 40px;
   background-color: rgba(30, 30, 30, 0.6);
   color: white;
   transition: transform 0.3s ease-in-out;
@@ -51,25 +145,12 @@ margin:80px auto;
   color: white;
   cursor: pointer;
 }
-.section-middle{
-  display:flex;
-  gap:50px;
-  justify-content: space-between;
-  margin-top: 50px;
-  margin-left: 0px;
-  text-align: center;
-}
-.section-middle-left{
-  width:50%;
-}
+
 .section-middle-right{
   width:50%
 }
 @media (min-width: 768px) {
    
-    .about-page {
-      margin: 80px 60px;
-    }
   
     /* .section-middle {
       width: 50%;
@@ -89,87 +170,6 @@ margin:80px auto;
     margin-top: 10px;
     /* background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7); */
 }
-.section-right{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap:50px;
-}
-.ps-section{  
-  width: 20%;
-  height: max-content;
-  justify-content: center;
-  padding: 20px;
-  color: black;
-  text-align: center;
-  background-color: rgba(30, 30, 30, 0.6);
-  border-radius: 20px;
-  background: linear-gradient(164deg, rgba(248,185,154,1) 20%, rgba(246,200,141,1) 45%, rgba(225,196,183,1) 63%, rgba(190,241,201,1) 89%);
-  /* font-family: 'Montserrat Alternates', sans-serif !important; */
-
-}
-.resume-dload{
-    width: 20%;
-    height: max-content;
-    justify-content: center;
-    padding: 50px 30px;
-    text-align: center;
-    border-radius: 20px;
-    cursor: pointer;
-    background: linear-gradient(137deg, rgba(73,242,180,1) 32%, rgba(26,175,211,1) 66%);
-
-}
-.resume-dload p{
-    color: black;
-}
-.resume-dload a{
-    text-decoration: none;
-    color:darkgrey;
-  
-}
-.dload-logo{
-    width:35px;
-    height: 47px;
-}
-
-.dribbble-link{
-    height: max-content;
-    padding: 40px;
-    margin-bottom: 30px;
-    /* background-color: transparent;
-    border: 2px solid darkgrey; */
-    border-radius: 15px;
-    color: darkgrey;
-    background-color: transparent;
-    border: 5px solid rgba(30, 30, 30, 0.8);
-}
-.dribbble-logo-img{
-    height: 15vh;
-    width: 10vw;
-}
-.behance-logo-img{
-  height:18vh;
-  width:8vw;
-}
-.certificates{
-    height: 74%;
-    padding: 40px;
-    background-color: rgba(30, 30, 30, 0.6);
-    border-radius: 15px;
-    color: darkgrey;
-    background-color: transparent;
-    /* border: 2px solid darkgrey; */
-    border: 5px solid rgba(30, 30, 30, 0.8);
-
-}
-.certf-head {
-    margin-top: 0;
-    font-size: 50px;
-    font-family: 'Stylish', serif !important;
-    color:#eb498c;
-    opacity: 0;
-    animation: fadeIn 4s forwards infinite;
-}
 
   @keyframes fadeIn {
     from {
@@ -180,15 +180,10 @@ margin:80px auto;
     }
   }
   
-.certificates a{
-  color:darkgrey;
-  font-size: 18px;
-  text-decoration:underline;
-  
-}
 
-.dribbble-link h2{
-    /* font-family: 'Stylish', serif; */
+
+
+/*.dribbble-link h2{
     position: relative;
     font-size: 4vw;
     color: transparent;
@@ -200,7 +195,6 @@ margin:80px auto;
 .dribbble-link h2::before{
     content: attr(data-text);
     position: absolute;
-    /* left: 0; */
     top: 0;
     height: 100%;
     width: 0;
@@ -209,7 +203,7 @@ margin:80px auto;
     border-right: 1px solid #563D10;
     overflow: hidden;
     animation: animate 5s linear infinite;
-}
+}*/
 @keyframes animate{
     
      0%,10%,100%{

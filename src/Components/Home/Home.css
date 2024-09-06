@@ -1,52 +1,52 @@
 
 body{
-  background-color: black;
   height: 100vh;
 }
-
+.home{
+  background-color: white;
+  width: 100%; 
+  height: max-content; 
+ background-image: url('../../../public/images/homebackground.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  
+}
 .home-container {
-  margin: auto;
-  margin-top: 150px;
+  margin: 100px auto;
+  margin-bottom: 0;
   width: 80%;
-  height: 500px;
+  height: max-content;
   padding: 20px;
-  /* border: 1px solid #ccc; */
-  /* background-color: #1E1E1E; */
-  background-color: rgba(30, 30, 30, 0.6);
+  /*background-color: rgba(30, 30, 30, 0.6);*/
   border-radius: 15px;
-  color: white;
+  color: black;
   text-align: center;
   
 }
 
 .home-sections{
-  display: flex;
-  height: 80%;
-  flex-wrap: wrap;
-  /* border: 2px solid yellow; */
-
+  height: max-content;
+  display: block;
+  justify-content: center;
+  align-items:center ;
+  
 }
-
-.home-left,.home-right {
-  /* display: flex; */
-  width: 50%; /* Make both sections take full width on smaller screens */
-  text-align: center;
-  margin-bottom: 20px; /* Add some spacing between the sections */
+.hello-txt{
+  margin-top: 50px !important;
 }
 .my-name{
   height: max-content;
-  padding: 10px;
-  margin-top: 30%;
+  margin: 20px;
  
 }
 .name-head{
- 
   font-family: 'Philosopher', sans-serif !important;
   font-size: 50px !important;
-
 }
 .animated-text {
-  background: linear-gradient(45deg, #f5613c, #f8a769, #fcf649, #6df393, #35f3d9);
+  background: linear-gradient(45deg, #f85026, #f78c3b, #b1ac2c, #137c31, #088676);
+  background: linear-gradient(45deg, #f79c78, #f8c174,#f18be4,#f04973,#49d9f0);
   background-size: 200% 200%;
   color: transparent;
   background-clip: text;
@@ -67,28 +67,34 @@ body{
 }
 .location{
   display: flex;
-  /* justify-content: space-around; */
   justify-content: center;
+  
 }
 /* Home.css */
 .india-text {
   font-family: 'Julius Sans One', sans-serif; 
   letter-spacing: 8px !important; 
-  color:white; 
+  color:black; 
   padding: 5px;
 }
 
 .home-right{
-  width: 50%;
+  width: 100%;
   text-align: center;
  
 }
 
 .home-para{
   text-align: center;
-  font-family: 'Montserrat Alternates', sans-serif !important;
-  font-size: 18px !important;
-  margin-top: 40% !important;
+  justify-content: center;
+  align-items: center;
+  /*font-family: 'Montserrat Alternates', sans-serif !important;*/
+  font-size: 15px !important;
+  height: max-content;
+  padding: 50px;
+  padding-bottom: 150px;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400 !important;
 }
 
 @media (min-width: 768px) {
@@ -103,6 +109,11 @@ body{
 
   .home-left,
   .home-right {
-    width: 48%; /* Adjust width for larger screens */
+    width: 100%; /* Adjust width for larger screens */
+  }
+  .sec-divider{
+    background-color:#C4DFAD ;
+    height: 20px;
+    border: transparent;
   }
 }

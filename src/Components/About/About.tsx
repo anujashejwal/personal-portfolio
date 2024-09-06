@@ -1,25 +1,37 @@
 
 import "./About.css";
+import Work from "../Work/Work";
 
 export default function About() {
   return (
-    <div>
-      {/* <Navbar /> */}
+    <div className="about-section">
+    
       <div className="about-page">
-        <section className="section-middle">
-        <div className="section-middle-left">
-        <div className="dribbble-link">
-            <h2 data-text="HEYYAAA!!">HEYYAAA!!</h2>
-            <p>I hope you're all doin good. To check out my UI/UX and Figma Designs/Animation here is my dribbble and Behance account link. Go check out it might help you to get some ideas. Please click on the logo.
-            </p>
+      
+        <div className="profiles">
+        <h1>Profiles</h1>
+         <div className="profiles-sections">
+        <div className="profile-txt">
            
-            <div className="profile-links">
+        
+      <b>
+        Hey All, To explore my UI/UX work, you can check out my profiles on <strong>Dribbble</strong> and <strong>Behance</strong>. Simply click the buttons below to view them!
+      </b>
+      <ul>
+        <li>
+          Dribbble: Known for creative portfolios, Dribbble is where I showcase my designs, interact with other designers, and get feedback from the design community.
+        </li>
+        <li>
+          Behance: On Behance, I share complete case studies of my projects, including in-depth processes, wireframes, and final designs, giving you a detailed look into how I approach each project.
+        </li>
+      </ul>
+            <div className="profile-buttons">     
             <a
               href="https://dribbble.com/anujashejwal"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="../images/dribbble-logo.png" className="dribbble-logo-img" />
+              <button>Dribbble</button>
 
             </a>
             <a
@@ -27,62 +39,22 @@ export default function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="../images/behance-logo.png" className="behance-logo-img" />
-
-            </a>
-            </div>
-          </div>
-          
+              <button>Behance</button>
+            
+            </a>   
+            </div> 
         </div>
-        <div className="section-middle-right">
-          <div className="certificates">
-          <h1 className='certf-head animated'>Certificates</h1>
-          <div className="certificate-links">
-            <ul>
-              <li>
-                <a
-                  href="../Foundation of UX Design.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Foundation of UX Design
-                </a>
-              </li>
-              <li>
-                <a
-                  href="../High-Fidelity designs and prototypes in figma.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  High-Fidelity designs and prototypes in Figma
-                </a>
-              </li>
-              <li>
-                <a
-                  href="../Foundation of UX Design.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Foundation of UX Design
-                </a>
-              </li>
-              <li>
-                <a
-                  href="../High-Fidelity designs and prototypes in figma.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  High-Fidelity designs and prototypes in Figma
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          </div>
-          </div>
-          
-        </section>
-        <section className="section-left">
+        
+        <img src='../images/frames.png' className="frames-img"/>
+        </div>
+    
+        
+        </div>
+        <Work/>
+        <section className="accounts">
+        <h1>Accounts</h1>
+        
+          <div className="accounts-boxes">
           <div className="left-1">
             <a
               href="https://www.linkedin.com/in/anuja-shejwal-153b4419a/"
@@ -117,27 +89,6 @@ export default function About() {
               <h3>Twitter</h3>
             </a>
           </div>
-        </section>
-
-        
-{/* High-Fidelity designs and prototypes in figma.pdf */}
-        <section className="section-right">
-          <div className="ps-section">
-            <h3>PS.</h3>{" "}
-            <p>
-              I am really interested in discussing movies, travel, cooking and
-              pets so if you like any one of those, we'll be good to go :)
-            </p>
-          </div>
-          <div className="resume-dload">
-          <a
-              href="../Anuja_Shejwal Resume.pdf"
-              download="Anuja_Shejwal Resume.pdf"
-            >
-            <img src="../images/download-logo-2.png" className="dload-logo" />
-            
-              <p>Download my resume here</p>
-              </a>
           </div>
         </section>
       </div>

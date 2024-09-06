@@ -52,10 +52,7 @@ const Contact: React.FC = () => {
       {/* <Navbar /> */}
       
       <div className="contact-container">
-        <Typography variant="h4" className="contact-head">
-          Get in Touch
-        </Typography>
-
+        <h1>Get in Touch</h1>
         <form
           onSubmit={handleSubmit}>
 
@@ -67,7 +64,7 @@ const Contact: React.FC = () => {
             name="firstName"
             value={firstname}
             onChange={(e:any) => setfirstname(e.target.value)}
-            style={{width:'31%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px',marginRight:'30px'}}
+            style={{width:'31%',color:'#898787',border:'1px solid #282828',backgroundColor:'transparent',borderRadius:'5px',padding:'20px',fontSize:'20px',marginRight:'30px'}}
             />
             <input
             type="text"
@@ -76,7 +73,7 @@ const Contact: React.FC = () => {
             name="lastName"
             value={lastname}
             onChange={(e:any) => setlastname(e.target.value)}
-            style={{width:'31%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px'}}
+            style={{width:'31%',color:'#898787',border:'1px solid #282828',backgroundColor:'transparent',borderRadius:'5px',padding:'20px',fontSize:'20px'}}
             />
         </div>
           <input
@@ -86,7 +83,7 @@ const Contact: React.FC = () => {
             name="email"
             value={email}
             onChange={(e:any) => setemail(e.target.value)}
-            style={{width:'70%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px',marginBottom:'30px'}}
+            style={{width:'70%',color:'#898787',border:'1px solid #282828',backgroundColor:'transparent',borderRadius:'5px',padding:'20px',fontSize:'20px',marginBottom:'30px'}}
 
           />
           <textarea 
@@ -98,7 +95,7 @@ const Contact: React.FC = () => {
           
             name="message"
             className='textarea'
-            style={{width:'70%',color:'#898787',border:'1px solid #282828',backgroundColor:'#282828',borderRadius:'5px',padding:'20px',fontSize:'20px',marginBottom:'30px'}}
+            style={{width:'70%',color:'#898787',border:'1px solid #282828',backgroundColor:'transparent',borderRadius:'5px',padding:'20px',fontSize:'20px',marginBottom:'30px'}}
             />
   
         <div data-netlify-recaptcha="true"></div>
@@ -108,11 +105,11 @@ const Contact: React.FC = () => {
             variant="contained"
             style={{
               fontSize:'20px',
-              padding: '15px 60px',
+              padding: '15px 30px',
               border: '2px solid white',
-              color: 'white',
+              color: 'black',
               borderRadius: '15px',
-              backgroundColor: 'transparent',
+              backgroundColor: 'white',
             }}
             disabled={isloading}
             

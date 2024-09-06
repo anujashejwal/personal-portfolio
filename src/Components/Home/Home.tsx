@@ -13,12 +13,13 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <Element name="home">
+      <div className="home">
       <div className="home-container">
         <div className='home-sections'>
         <section className='home-left'>
+        <Typography variant='h5' className='hello-txt'> Hello, I'm</Typography>
           <div className='my-name'>
-            <Typography variant='h5' className='name-head'>
+            <Typography variant='h4' className='name-head'>
             <span className='animated-text'>ANUJA SHEJWAL</span>
               </Typography>
               {/* <Typography variant='h5' className='name-head' style={{color:'#F06870'}}>
@@ -29,8 +30,8 @@ export default function Home() {
             style={{ 
               backgroundColor: 'rgba(128,128,128,0.5)', 
               height: '1px', 
-              margin: '40px auto',
-              width:'30%' 
+              margin: '20px auto',
+              width:'30%',
             }} 
           />
           <div className="location">
@@ -51,7 +52,8 @@ export default function Home() {
         </section>
         </div>
       </div>
-      </Element>
+      </div>
+    <div className="sec-divider"></div>
       <Element name="about">
         <About />
       </Element>

@@ -2,19 +2,22 @@
   position: sticky;
   display: flex;
   justify-content:center;
-  align-items: center;
+  align-items: flex-end;
+  padding-right: 80px;
+  background-color: white !important;
   top: 0; /* Ensures the sticky position sticks at the top */
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important; /* White shadow */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important;
   z-index: 1000; /* Keeps the navbar above other elements when scrolling */
 }
- 
+
 .nav-link {
     font-family: 'Inter', sans-serif;
     text-transform: capitalize;
-    color: white; /* Default link color */
+    color: black; /* Default link color */
     text-decoration: none;
     margin: 35px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
   }
 .nav-link:hover {
   color: #ED7C82;
@@ -24,9 +27,7 @@
 .active-link {
     color: #ED7C82; /* Color for the active link */
   }
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root{
-    background-color: black !important;
-  }
+
 /* .button:hover{
   background-color:rgba(84, 83, 83, 0.6);
   color:black;

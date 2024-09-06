@@ -1,15 +1,41 @@
 .contactpage{
   margin: 50px auto;
+  margin-bottom: 0;
+  height: 110vh;
+  background-image: url('../../../public/images/footerbg.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.contact-container h1{
+  color: black;
+  font-family: 'Philosopher', sans-serif !important;
+  font-size: 3rem;
+  padding: 50px;
+  color:black;
+    font-size:3rem;
+    text-align: center;
+    text-align: left;
+    margin: 0;
+    padding: 50px 50px 0;
+    margin-left: 70px;
+    font-size: 4rem;
+    font-family: 'Merienda', sans-serif;
+    font-family: 'Philosopher', sans-serif !important;
+    color: #14476e8f;
+    background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
+    background: gradient(linear, left top, right top, from(#0c0b0b), to(#222), color-stop(0.8, #fff)) no-repeat;
+    background-size: 110px 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: flick 1.7s infinite;
+    text-align: center;
 
 }
 .contact-container {
   margin: auto;
   width: 80%;
   height: 500px;
-  padding: 20px;
-  /* border: 1px solid #ccc; */
-  background-color: rgba(30, 30, 30, 0.6);
-  /* background-color: white; */
   border-radius: 15px;
   color: white;
   text-align: center;
@@ -31,7 +57,6 @@
   width:80%;
   color: #898787;
   border: 1px solid #282828;
-  background-color: #282828;
   border-radius: 5px;
   padding: 20px;
   font-size: 20px;
@@ -45,13 +70,11 @@
 }
 
 .button {
-  width: 50%;
+  width: 25%;
   font-size: 20px;
-  padding: 15px;
-  border: 2px solid white;
-  color: white;
+  color: black !important;
   border-radius: 15px;
-  background-color: transparent;
+  background-color: white !important;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
