@@ -21,6 +21,7 @@ export default function About() {
         <li>
           Dribbble: Known for creative portfolios, Dribbble is where I showcase my designs, interact with other designers, and get feedback from the design community.
         </li>
+        <br></br>
         <li>
           Behance: On Behance, I share complete case studies of my projects, including in-depth processes, wireframes, and final designs, giving you a detailed look into how I approach each project.
         </li>
@@ -50,7 +51,9 @@ export default function About() {
     
         
         </div>
+
         <Work/>
+        
         <section className="accounts">
         <h1>Accounts</h1>
         

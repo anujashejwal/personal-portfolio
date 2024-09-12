@@ -1,34 +1,70 @@
-.navbar{
+/* Main navbar styles */
+.navbar {
   position: sticky;
   display: flex;
-  justify-content:center;
-  align-items: flex-end;
-  padding-right: 80px;
+  justify-content: center;
+  align-items: center;
   background-color: white !important;
-  top: 0; /* Ensures the sticky position sticks at the top */
-  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important;
-  z-index: 1000; /* Keeps the navbar above other elements when scrolling */
+  top: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  z-index: 1000;
+  padding: 0 20px;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Link styles */
 .nav-link {
-    font-family: 'Inter', sans-serif;
-    text-transform: capitalize;
-    color: black; /* Default link color */
-    text-decoration: none;
-    margin: 35px 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-  }
+  font-family: 'Inter', sans-serif;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  margin: 15px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
 .nav-link:hover {
   color: #ED7C82;
   cursor: pointer;
 }
 
 .active-link {
-    color: #ED7C82; /* Color for the active link */
+  color: #ED7C82; /* Color for the active link */
+}
+
+/* Hide menu button on larger screens */
+.menu-button {
+  display: none;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 10px;
   }
 
-/* .button:hover{
-  background-color:rgba(84, 83, 83, 0.6);
-  color:black;
-} */
+  /* Hide the nav-links on mobile */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show the hamburger menu on smaller screens */
+  .menu-button {
+    display: block;
+  }
+}
+
+/* Mobile dropdown menu styles */
+.menu-dropdown .MuiPaper-root {
+  background-color: white;
+  color: black;
+}
+
+.menu-dropdown .nav-link {
+  margin: 0;
+}

@@ -8,16 +8,10 @@
     padding:50px 30px;
     padding-bottom: 0;
     margin-left: 70px;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-family: 'Merienda', sans-serif;
     font-family: 'Philosopher', sans-serif !important;
-    color: #8830078f;
-    background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
-    background: gradient(linear, left top, right top, from(#0c0b0b), to(#222), color-stop(0.8, #fff)) no-repeat;
-    background-size: 110px 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: flick 1.7s infinite;
+    color: #7a2904d0;
     text-align: center;
 }
 .head-para{
