@@ -28,7 +28,7 @@
 }
 
 .profile-txt {
-  width: 100%; /* Full width for smaller screens */
+  width: 80%; /* Full width for smaller screens */
   text-align: center; /* Center text on small screens */
   margin-bottom: 20px;
   padding: 20px;
@@ -75,12 +75,12 @@
 }
 
 .accounts-boxes {
-  width: 100%;
-  margin: 50px auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; /* Stack boxes on small screens */
-  gap: 20px;
+  width: 50%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .left-1, .left-2, .left-3 {

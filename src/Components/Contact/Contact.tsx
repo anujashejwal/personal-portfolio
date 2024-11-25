@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
             variant="contained"
             style={{
               fontSize:'20px',
-              padding: '15px 30px',
+              padding: '15px 50px',
               border: '2px solid white',
               color: 'black',
               borderRadius: '15px',

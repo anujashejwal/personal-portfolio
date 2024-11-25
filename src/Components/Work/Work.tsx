@@ -7,24 +7,24 @@ export default function Work(){
             <div className="design-boxes">
                 <div className="design-1">
                     <h2>Plant nursery</h2>
-                    <p>A plant nursery app is a digital platform designed to help users manage and explore plant care and gardening</p>
+                    <p>A plant nursery app is a digital platform designed to help users manage and explore plant care.</p>
                     <img src="../images/work1.png" className="design-img"/>
                 </div>
                 <div className="design-1">
                     <h2>Plant nursery</h2>
-                    <p>A food delivery app is a digital platform that allows users to browse and order food from local restaurants and eateries.</p>
+                    <p>A food delivery app is a digital platform that allows users to browse and order food from local restaurants.</p>
                     <img src="../images/work2.png" className="design-img"/>
                 </div>
             </div>  
             <div className="design-boxes">
                 <div className="design-1">
                     <h2>Smart Device Management</h2>
-                    <p>Smart Device Mobile App simplifies home product management, helps to control devices for smarter living.</p>
+                    <p>Smart Device Mobile App simplifies home product management.</p>
                     <img src="../images/work3.png" className="design-img"/>
                 </div>
                 <div className="design-1">
                     <h2>Footwear Shopping App</h2>
-                    <p>An online footwear app lets users browse, buy, and get shoes delivered easily.</p>
+                    <p>The online footwear app lets users browse shoes and gets delivered easily.</p>
                     <img src="../images/work4.png" className="design-img"/>
                 </div>
             </div>  
