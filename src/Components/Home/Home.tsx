@@ -50,9 +50,9 @@ export default function Home() {
         <section className='home-right'>
           <Typography className='home-para'>
           As a Software Engineer, graduated in 2023. Currently I am working as a Software Engineer at Jio Platform Limited, Navi Mumbai. I’m here to elevate your web development projects and craft intuitive UI/UX designs. Beyond the code, I’m all about exploring the world, diving into tech trends, and chatting about lifestyle and more. 
-          Let’s create something awesome together!
-          </Typography>
           
+          </Typography>
+          <Typography className='home-para2'>Let’s create something awesome together!</Typography>
         </section>
         </div>
       </div>
