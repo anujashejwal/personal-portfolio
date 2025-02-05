@@ -111,7 +111,7 @@ body{
 @media (min-width: 768px) {
   /* Apply styles for screens larger than 768px width */
   .home-container {
-    width: 70%;
+    width: 85%;
   }
 
   .home-sections {
