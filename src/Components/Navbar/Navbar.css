@@ -4,9 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white !important;
+  background-color: #FCE6E0 !important;
   top: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 4px 4px 10px rgba(207, 89, 96, 0.3) !important; 
   z-index: 1000;
   padding: 0 20px;
 }
@@ -18,17 +18,20 @@
 
 /* Link styles */
 .nav-link {
-  font-family: 'Inter', sans-serif;
+
   text-transform: capitalize;
-  color: black;
+  color: #D02632;
   text-decoration: none;
-  margin: 15px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  margin: 20px;
+  /* font-family: "Pacifico", serif; */
+  font-family: "Poiret One", serif;
+  font-weight: 800;
+  /* letter-spacing: 5px !important; */
+
 }
 
 .nav-link:hover {
-  color: #ED7C82;
+  color: #FCB6BA;
   cursor: pointer;
 }
 

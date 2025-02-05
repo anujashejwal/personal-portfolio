@@ -13,21 +13,24 @@ export default function Navbar() {
         <Toolbar>
           {/* Navigation links */}
           <ScrollLink to="home" smooth={true} duration={500} offset={-100} className="nav-link" style={{fontSize:'15px'}}>
-            Home
+            HOME
           </ScrollLink>
-          <ScrollLink to="about" smooth={true} duration={500} offset={-100} className="nav-link" style={{fontSize:'15px'}}>
-            About
+          
+          <ScrollLink to="work" smooth={true} duration={500} offset={-100} className="nav-link" style={{fontSize:'15px'}}>
+            WORK
           </ScrollLink>
-          <ScrollLink to="contact" smooth={true} duration={500} offset={-100} className="nav-link" style={{fontSize:'15px'}}>
-            Contact
+
+          <ScrollLink to="accounts" smooth={true} duration={500} offset={-100} className="nav-link" style={{fontSize:'15px'}}>
+            CONNECT
           </ScrollLink>
+
           <a
             href="../Anuja_Shejwal Resume.pdf"
             download="Anuja_Shejwal Resume.pdf"
             className="nav-link"
             style={{fontSize:'15px'}} 
           >
-            Resume
+            RESUME
           </a>
         </Toolbar>
       </AppBar>

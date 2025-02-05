@@ -8,6 +8,8 @@ import Navbar from '../Navbar/Navbar';
 import Footer from "../Footer/Footer";
 import About from '../About/About';
 import Contact from '../Contact/Contact';
+import Work from '../Work/Work';
+import Accounts from '../Accounts/Accounts';
 
 export default function Home() {
   return (
@@ -47,18 +49,20 @@ export default function Home() {
         </section>
         <section className='home-right'>
           <Typography className='home-para'>
-          As a Software Engineer, freshly graduated in 2023, I’m here to elevate your web development projects and craft intuitive UI/UX designs. Beyond the code, I’m all about exploring the world, diving into tech trends, and chatting about lifestyle and more. Let’s create something awesome together!
+          As a Software Engineer, graduated in 2023. Currently I am working as a Software Engineer at Jio Platform Limited, Navi Mumbai. I’m here to elevate your web development projects and craft intuitive UI/UX designs. Beyond the code, I’m all about exploring the world, diving into tech trends, and chatting about lifestyle and more. 
+          Let’s create something awesome together!
           </Typography>
+          
         </section>
         </div>
       </div>
       </div>
-    <div className="sec-divider"></div>
-      <Element name="about">
+      {/* <Element name="about">
         <About />
-      </Element>
-      <Element name="contact">
-        <Contact />
+      </Element> */}
+      <Element name="work">
+      <Work/>
+     <Accounts/>
       </Element>
       <Footer />
     </div>

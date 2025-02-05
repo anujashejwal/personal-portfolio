@@ -1,0 +1,91 @@
+.accounts{
+    width: 50%;
+    height: max-content;
+    background-color: #FCE6E0;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+.accounts h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem; /* Reduce size for smaller screens */
+    font-family: "Poiret One", serif;
+    color: #D02632;  
+}
+  
+  .accounts-boxes 
+  {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .left-1, .left-2, .left-3 {
+    text-align: center;
+    padding: 10px;
+    /* background-color: rgba(30, 30, 30, 0.6); */
+    color: #D02632;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .left-1 {
+    /* background: linear-gradient(164deg, rgba(0,117,181,1) 26%, rgba(12,180,243,1) 62%); */
+    background-color: #D02632;
+}
+  
+  .left-2 {
+    /* background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7); */
+    background-color: #D02632;  
+}
+  
+  .left-3 {
+    /* background: linear-gradient(162deg, rgba(214,218,215,1) 0%, rgba(69,70,69,1) 24%, rgba(0,0,0,1) 52%, rgba(69,70,69,1) 78%, rgba(214,218,215,1) 100%); */
+    background-color: #D02632;  
+}
+  
+  .left-1:hover, .left-2:hover, .left-3:hover {
+    transform: scale(1.05); /* Reduce hover effect for small screens */
+  }
+  
+  /* .left-1 a, .left-2 a, .left-3 a {
+    text-decoration: none;
+    color: #D02632;
+  }
+   */
+  .logo-img {
+    height: 30px; /* Reduce logo size for smaller screens */
+    max-width: 30px;
+    border-radius: 1px;
+   
+  }
+  @media (min-width: 768px) {
+    .profiles-sections {
+      flex-direction: row; /* Switch to row layout for medium screens */
+      justify-content: space-between;
+    }
+  
+    .profile-txt {
+      width: 50%; /* Increase width for larger screens */
+    }
+  
+    .frames-img {
+      width: 470px;
+      height: 450px;
+    }
+  
+    .accounts-boxes {
+      flex-direction: row; /* Row layout for larger screens */
+      gap: 50px;
+    }
+    .accountstext{
+      font-family: "Poiret One", serif !important;
+      color: #D02632 !important;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  

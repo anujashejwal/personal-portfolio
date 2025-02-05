@@ -1,23 +1,24 @@
 
 body{
   height: 100vh;
+  background-color: #FCE6E0;
 }
 .home{
   background-color: white;
-  width: 100%; 
+  width: 70%; 
+  margin: auto;
   height: max-content; 
- background-image: url('../../../public/images/homebackground.png'); 
+ /* background-image: url('../../../public/images/homebackground.png');  */
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
-  
+  border-radius: 20px;
 }
 .home-container {
   margin: 100px auto;
   margin-bottom: 0;
   width: 80%;
-  height: max-content;
-  padding: 20px;
+  padding: 10px;
   /*background-color: rgba(30, 30, 30, 0.6);*/
   border-radius: 15px;
   color: black;
@@ -46,7 +47,7 @@ body{
 }
 .animated-text {
   background: linear-gradient(45deg, #f85026, #f78c3b, #b1ac2c, #137c31, #088676);
-  background: linear-gradient(45deg, #f79c78, #f8c174,#f18be4,#f04973,#49d9f0);
+  background: linear-gradient(45deg, #ff8656, #fab451,#f575e4,#f04973,#35ddf7);
   background-size: 200% 200%;
   color: transparent;
   background-clip: text;
@@ -92,7 +93,7 @@ body{
   font-size: 15px !important;
   height: max-content;
   padding: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   font-family: "Poppins", sans-serif !important;
   font-weight: 400 !important;
 }

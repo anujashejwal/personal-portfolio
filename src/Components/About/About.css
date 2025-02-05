@@ -2,13 +2,17 @@
   justify-content: center !important;
   align-items: center;
   font-family: "Poppins", sans-serif !important;
-  
+  width: 85%;
+  margin: auto;
 }
 
 .profiles {
-  background-color: #C4DFAD;
+  border: 10px solid white;
+  background-color:#F4F4F4;
   height: auto; /* Change to auto for responsive height */
   padding: 20px;
+  margin: 30px auto;
+  border-radius: 20px;
 }
 
 .profiles-sections {
@@ -22,9 +26,10 @@
   text-align: center;
   margin: 0;
   padding: 50px 30px;
-  font-size: 2.5rem; /* Reduce size for smaller screens */
-  font-family: 'Philosopher', sans-serif !important;
-  color: #047a5cbb;
+  font-size: 2rem; /* Reduce size for smaller screens */
+  /* font-family: 'Philosopher', sans-serif !important; */
+  font-family: "Poiret One", serif;
+  color: #D02632;
 }
 
 .profile-txt {
@@ -58,7 +63,7 @@
   border-radius: 10px;
   margin-top: 20px;
   border: 1px solid transparent;
-  background-color: #1b6d62;
+  background-color: #D02632;
   cursor: pointer;
 }
 
@@ -69,56 +74,6 @@
   margin-top: 20px;
 }
 
-.accounts h1 {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.accounts-boxes {
-  width: 50%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.left-1, .left-2, .left-3 {
-  text-align: center;
-  padding: 30px;
-  background-color: rgba(30, 30, 30, 0.6);
-  color: white;
-  border-radius: 20px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.left-1 {
-  background: linear-gradient(164deg, rgba(0,117,181,1) 26%, rgba(12,180,243,1) 62%);
-}
-
-.left-2 {
-  background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
-}
-
-.left-3 {
-  background: linear-gradient(162deg, rgba(214,218,215,1) 0%, rgba(69,70,69,1) 24%, rgba(0,0,0,1) 52%, rgba(69,70,69,1) 78%, rgba(214,218,215,1) 100%);
-}
-
-.left-1:hover, .left-2:hover, .left-3:hover {
-  transform: scale(1.05); /* Reduce hover effect for small screens */
-}
-
-.left-1 a, .left-2 a, .left-3 a {
-  text-decoration: none;
-  color: white;
-}
-
-.logo-img {
-  height: 40px; /* Reduce logo size for smaller screens */
-  max-width: 40px;
-  border-radius: 15px;
-  margin-top: 10px;
-}
 
 /* Responsive Design Adjustments */
 @media (min-width: 768px) {

@@ -1,15 +1,14 @@
 
 import "./About.css";
-import Work from "../Work/Work";
 
 export default function About() {
   return (
     <div className="about-section">
     
       <div className="about-page">
-      
+     
         <div className="profiles">
-        <h1>Profiles</h1>
+        <h1>PROFILES</h1>
          <div className="profiles-sections">
         <div className="profile-txt">
            
@@ -46,54 +45,13 @@ export default function About() {
             </div> 
         </div>
         
-        <img src='../images/frames.png' className="frames-img"/>
+        {/* <img src='../images/frames.png' className="frames-img"/> */}
         </div>
     
         
         </div>
-
-        <Work/>
         
-        <section className="accounts">
-        <h1>Accounts</h1>
-        
-          <div className="accounts-boxes">
-          <div className="left-1">
-            <a
-              href="https://www.linkedin.com/in/anuja-shejwal-153b4419a/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="../images/linkedin-logo-3.png" className="logo-img" />
-
-              <h3>Linked In</h3>
-            </a>
-          </div>
-
-          <div className="left-2">
-            <a
-              href="https://www.instagram.com/anuja_shejwal/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            <img src="../images/insta-logo-3.png" className="logo-img" />
-            <h3>Instagram</h3>
-            </a>
-          </div>
-          <div className="left-3">
-            <a
-              href="https://twitter.com/AnujaShejwal"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {/* <img src="../images/twitter-logo.jpg" className="logo-img" /> */}
-              <img src="../images/twitter-logo-3.png" className="logo-img" />
-
-              <h3>Twitter</h3>
-            </a>
-          </div>
-          </div>
-        </section>
+      
       </div>
     </div>
   );
