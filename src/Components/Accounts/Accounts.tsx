@@ -45,9 +45,9 @@ const Accounts = () => {
           </div>
           </div>
           <h3>Or</h3>
-          <h2><a href="mailto:anujashejwal55@gmail.com?subject=Hello&body=How%20are%20you?" style={{color:'#6b0209', textAlign:'center'}}>
+          <div className="emailtext"><h2><a href="mailto:anujashejwal55@gmail.com?subject=Hello&body=How%20are%20you?" style={{color:'#6b0209', textAlign:'center'}}>
           anujashejwal55@gmail.com
-</a></h2>
+</a></h2></div>
         </section>
     </div>
   );

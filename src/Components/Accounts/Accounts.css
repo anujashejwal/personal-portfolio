@@ -62,17 +62,25 @@
     border-radius: 1px;
    
   }
-  .accounts h2 {
-    font-family: "Poiret One", serif !important;
-    padding: 10px;
-    text-decoration: underline !important;
-    text-align: center !important;
-  }
   .accounts h3{
     font-family: "Poiret One", serif !important;
     color: #6b0209 !important;
     text-align: center;
     padding: 10px;
+  }
+ 
+  .emailtext a{
+    font-family: "Poiret One", serif !important;
+    padding: 10px;
+    text-decoration: underline !important;
+    text-align: center !important;
+    color:#6b0209;
+  }
+  .emailtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
   }
   @media (min-width: 768px) {
     .profiles-sections {
