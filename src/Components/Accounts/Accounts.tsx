@@ -6,7 +6,7 @@ const Accounts = () => {
   return (
     <div className="AccountsPage">
       <section className="accounts">
-        <h1>CONNECT US ON</h1>
+        <h1>CONNECT US AT</h1>
         
           <div className="accounts-boxes">
           <div className="left-1">
@@ -44,7 +44,7 @@ const Accounts = () => {
             </a>
           </div>
           </div>
-          <h3>Or mail us at</h3>
+          <h3>Or</h3>
           <h2><a href="mailto:anujashejwal55@gmail.com?subject=Hello&body=How%20are%20you?" style={{color:'#6b0209', textAlign:'center'}}>
           anujashejwal55@gmail.com
 </a></h2>

@@ -64,8 +64,7 @@
   }
   .accounts h2 {
     font-family: "Poiret One", serif !important;
-    color: #6b0209 !important;
-    text-align: center;
+    text-align: center !important;
     padding: 10px;
     text-decoration: underline !important;
   }
