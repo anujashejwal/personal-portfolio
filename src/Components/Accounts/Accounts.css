@@ -11,7 +11,7 @@
     margin-top: 20px;
     font-size: 1.5rem; /* Reduce size for smaller screens */
     font-family: "Poiret One", serif;
-    color: #D02632;  
+    color: #6b0209;  
 }
   
   .accounts-boxes 
@@ -27,24 +27,24 @@
     text-align: center;
     padding: 10px;
     /* background-color: rgba(30, 30, 30, 0.6); */
-    color: #D02632;
+    color: #6b0209;
     border-radius: 50px;
     transition: transform 0.3s ease-in-out;
   }
   
   .left-1 {
     /* background: linear-gradient(164deg, rgba(0,117,181,1) 26%, rgba(12,180,243,1) 62%); */
-    background-color: #D02632;
+    background-color: #6b0209;
 }
   
   .left-2 {
     /* background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7); */
-    background-color: #D02632;  
+    background-color: #6b0209;  
 }
   
   .left-3 {
     /* background: linear-gradient(162deg, rgba(214,218,215,1) 0%, rgba(69,70,69,1) 24%, rgba(0,0,0,1) 52%, rgba(69,70,69,1) 78%, rgba(214,218,215,1) 100%); */
-    background-color: #D02632;  
+    background-color: #6b0209;  
 }
   
   .left-1:hover, .left-2:hover, .left-3:hover {
@@ -64,14 +64,14 @@
   }
   .accounts h2 {
     font-family: "Poiret One", serif !important;
-    color: #D02632 !important;
+    color: #6b0209 !important;
     text-align: center;
     padding: 10px;
     text-decoration: underline !important;
   }
   .accounts h3{
     font-family: "Poiret One", serif !important;
-    color: #D02632 !important;
+    color: #6b0209 !important;
     text-align: center;
     padding: 10px;
   }
