@@ -44,8 +44,10 @@ const Accounts = () => {
             </a>
           </div>
           </div>
-          <h3>Or mail us at </h3>
-          <h2>anujashejwal55@gmail.com</h2>
+          <h3>Or mail us at</h3>
+          <h2><a href="mailto:anujashejwal55@gmail.com?subject=Hello&body=How%20are%20you?" style={{color:'#D02632'}}>
+          anujashejwal55@gmail.com
+</a></h2>
         </section>
     </div>
   );
