@@ -25,8 +25,8 @@ export default function Navbar() {
           </ScrollLink>
 
           <a
-            href="../Anuja_Shejwal Resume.pdf"
-            download="Anuja_Shejwal Resume.pdf"
+            href="../Anuja Shejwal Resume.pdf"
+            download="Anuja Shejwal Resume.pdf"
             className="nav-link"
             style={{fontSize:'15px'}} 
           >
