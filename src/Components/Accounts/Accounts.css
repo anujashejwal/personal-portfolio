@@ -62,6 +62,19 @@
     border-radius: 1px;
    
   }
+  .accounts h2 {
+    font-family: "Poiret One", serif !important;
+    color: #D02632 !important;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline !important;
+  }
+  .accounts h3{
+    font-family: "Poiret One", serif !important;
+    color: #D02632 !important;
+    text-align: center;
+    padding: 10px;
+  }
   @media (min-width: 768px) {
     .profiles-sections {
       flex-direction: row; /* Switch to row layout for medium screens */
@@ -81,11 +94,7 @@
       flex-direction: row; /* Row layout for larger screens */
       gap: 50px;
     }
-    .accountstext{
-      font-family: "Poiret One", serif !important;
-      color: #D02632 !important;
-      text-align: center;
-      padding: 10px;
-    }
+    
+    
   }
   

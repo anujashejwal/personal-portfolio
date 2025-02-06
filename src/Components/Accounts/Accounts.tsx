@@ -44,8 +44,8 @@ const Accounts = () => {
             </a>
           </div>
           </div>
-          <h3 className="accountstext">Or mail us at </h3>
-          <h3 className="accountstext" style={{textDecoration: "underline"}}>anujashejwal55@gmail.com</h3>
+          <h3>Or mail us at </h3>
+          <h2>anujashejwal55@gmail.com</h2>
         </section>
     </div>
   );
